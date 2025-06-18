@@ -42,3 +42,11 @@ function display_filtered_products(filters):
         print "Color: " + product.color
         print "Brand: " + product.brand
         print "--------------------"
+
+# Feature 4
+# Display storefront welcome
+function display_storefront_header():
+    print "********************************"
+    print "*     WELCOME TO PSEUDO SHOP   *"
+    print "********************************"
+    print ""
