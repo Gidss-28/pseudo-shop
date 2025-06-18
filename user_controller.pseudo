@@ -1,6 +1,25 @@
 # Handles user signup and login
 
-# Placeholder function signatures:
-# function create_user(name, email, password)
-# function login_user(email, password)
+# User storage
+users_list = []
+
+# Function to create a new user
+function create_user(name, email, password):
+    # Create user dictionary and add to list
+    user = {
+        "name": name,
+        "email": email,
+        "password": password
+    }
+    users_list.append(user)
+    print "User registered successfully."
+
+# Function to login a user
+function login_user(email, password):
+    for each user in users_list:
+        if user.email == email and user.password == password:
+            print "Login successful."
+            return True
+    print "Login failed."
+    return False
 
