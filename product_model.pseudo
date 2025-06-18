@@ -1,5 +1,8 @@
 # Handles product data
 
+# In-memory product storage 
+products_list = []
+
 # Sample structure:
 # product = {
 #     name: "Sample Product",
