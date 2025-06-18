@@ -1,8 +1,9 @@
 # Handles product data
 
 # In-memory product storage 
-products_list = []
+products_list = [
 
+# Feature 3
 # Function to add a product
 function add_product(name, price, width, height, length, weight, color, brand):
     product = {
@@ -18,9 +19,12 @@ function add_product(name, price, width, height, length, weight, color, brand):
     products_list.append(product)
     print "Product added successfully."
 
+# Feature 1
 # Function to filter products by attributes
 function filter_products(filters):
     filtered_list = []
+    
+    # Checks if the product entered matches the criteria 
     for each product in products_list:
         match = True
         
