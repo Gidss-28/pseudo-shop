@@ -17,7 +17,3 @@ function add_product(name, price, width, height, length, weight, color, brand):
     }
     products_list.append(product)
     print "Product added successfully."
-
-# Placeholder product list
-product_list = []
-
