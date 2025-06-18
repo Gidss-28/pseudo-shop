@@ -47,6 +47,6 @@ function display_filtered_products(filters):
 # Display storefront welcome
 function display_storefront_header():
     print "********************************"
-    print "*     WELCOME TO PSEUDO SHOP   *"
+    print "*     WELCOME TO OUR BRAND NEW PSEUDO SHOP   *"
     print "********************************"
     print ""
