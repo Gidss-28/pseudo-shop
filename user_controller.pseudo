@@ -1,5 +1,8 @@
 # Handles user signup and login
 
+# User storage
+users_list = []
+
 # Function to create a new user
 function create_user(name, email, password):
     # Create user dictionary and add to list
