@@ -1,5 +1,10 @@
 # Displays product listings
 
-# Placeholder function:
-# function display_products()
-
+# Display all products
+function display_products():
+    for each product in products_list:
+        print "Name: " + product.name
+        print "Price: " + product.price
+        print "Color: " + product.color
+        print "Brand: " + product.brand
+        print "--------------------"
