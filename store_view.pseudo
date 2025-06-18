@@ -46,7 +46,7 @@ function display_filtered_products(filters):
 # Feature 4
 # Display storefront welcome
 function display_storefront_header():
-    print "********************************"
-    print "*     WELCOME TO PSEUDO SHOP   *"
-    print "********************************"
+    print "****************************************"
+    print "*     WELCOME TO FECP5's PSEUDO SHOP   *"
+    print "****************************************"
     print ""
