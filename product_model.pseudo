@@ -3,16 +3,20 @@
 # In-memory product storage 
 products_list = []
 
-# Sample structure:
-# product = {
-#     name: "Sample Product",
-#     width: 10,
-#     height: 5,
-#     length: 20,
-#     weight: 1.5,
-#     color: "red",
-#     brand: "Generic"
-# }
+# Function to add a product
+function add_product(name, price, width, height, length, weight, color, brand):
+    product = {
+        "name": name,
+        "price": price,
+        "width": width,
+        "height": height,
+        "length": length,
+        "weight": weight,
+        "color": color,
+        "brand": brand
+    }
+    products_list.append(product)
+    print "Product added successfully."
 
 # Placeholder product list
 product_list = []
