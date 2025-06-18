@@ -17,3 +17,27 @@ function add_product(name, price, width, height, length, weight, color, brand):
     }
     products_list.append(product)
     print "Product added successfully."
+
+# Function to filter products by attributes
+function filter_products(filters):
+    filtered_list = []
+    for each product in products_list:
+        match = True
+        
+        if filters.width and product.width != filters.width:
+            match = False
+        if filters.height and product.height != filters.height:
+            match = False
+        if filters.length and product.length != filters.length:
+            match = False
+        if filters.weight and product.weight != filters.weight:
+            match = False
+        if filters.color and product.color != filters.color:
+            match = False
+        if filters.brand and product.brand != filters.brand:
+            match = False
+            
+        if match:
+            filtered_list.append(product)
+    
+    return filtered_list
