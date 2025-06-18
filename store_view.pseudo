@@ -1,5 +1,6 @@
 # Displays product listings
 
+# Feature 2
 # Display all products
 function display_products():
     for each product in products_list:
@@ -8,3 +9,22 @@ function display_products():
         print "Color: " + product.color
         print "Brand: " + product.brand
         print "--------------------"
+
+# Feature 1
+# Display filtered products
+function display_filtered_products(filters):
+    filtered_products = filter_products(filters)
+    if filtered_products is empty:
+        print "No products match your filters."
+    else:
+        print "Filtered Products:"
+        for each product in filtered_products:
+            print "Name: " + product.name
+            print "Price: " + product.price
+            print "Width: " + product.width
+            print "Height: " + product.height
+            print "Length: " + product.length
+            print "Weight: " + product.weight
+            print "Color: " + product.color
+            print "Brand: " + product.brand
+            print "--------------------"

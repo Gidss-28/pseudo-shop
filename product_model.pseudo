@@ -1,7 +1,7 @@
 # Handles product data
 
 # In-memory product storage 
-products_list = [
+products_list = []
 
 # Feature 3
 # Function to add a product
