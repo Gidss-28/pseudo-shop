@@ -1,11 +1,21 @@
 # Displays product listings
 
 # Feature 2
-# Display all products
+# Display all products with full details
 function display_products():
+    if products_list is empty:
+        print "No products available in the store."
+        return
+    
+    print "===== PSEUDO SHOP STOREFRONT ====="
+    print "Available Products:"
+    print ""
+    
     for each product in products_list:
         print "Name: " + product.name
-        print "Price: " + product.price
+        print "Price: $" + product.price
+        print "Dimensions: " + product.width + "x" + product.height + "x" + product.length
+        print "Weight: " + product.weight + " lbs"
         print "Color: " + product.color
         print "Brand: " + product.brand
         print "--------------------"
@@ -16,15 +26,27 @@ function display_filtered_products(filters):
     filtered_products = filter_products(filters)
     if filtered_products is empty:
         print "No products match your filters."
-    else:
-        print "Filtered Products:"
-        for each product in filtered_products:
-            print "Name: " + product.name
-            print "Price: " + product.price
-            print "Width: " + product.width
-            print "Height: " + product.height
-            print "Length: " + product.length
-            print "Weight: " + product.weight
-            print "Color: " + product.color
-            print "Brand: " + product.brand
-            print "--------------------"
+        return
+    
+    print "===== FILTERED RESULTS ====="
+    print "Products matching your criteria:"
+    print ""
+    
+    for each product in filtered_products:
+        print "Name: " + product.name
+        print "Price: $" + product.price
+        print "Width: " + product.width
+        print "Height: " + product.height
+        print "Length: " + product.length
+        print "Weight: " + product.weight
+        print "Color: " + product.color
+        print "Brand: " + product.brand
+        print "--------------------"
+
+# Feature 4
+# Display storefront welcome
+function display_storefront_header():
+    print "******************************************************"
+    print "*     WELCOME TO OUR FECP5's BRAND NEW PSEUDO SHOP   *"
+    print "******************************************************"
+    print ""
