@@ -1,14 +1,25 @@
 # Displays product listings
 
 # Feature 2
-# Display all products
+# Display all products with full details
 function display_products():
+    if products_list is empty:
+        print "No products available in the store."
+        return
+    
+    print "===== PSEUDO SHOP STOREFRONT ====="
+    print "Available Products:"
+    print ""
+    
     for each product in products_list:
         print "Name: " + product.name
-        print "Price: " + product.price
+        print "Price: $" + product.price
+        print "Dimensions: " + product.width + "x" + product.height + "x" + product.length
+        print "Weight: " + product.weight + " lbs"
         print "Color: " + product.color
         print "Brand: " + product.brand
         print "--------------------"
+
 
 # Feature 1
 # Display filtered products
